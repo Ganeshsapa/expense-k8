@@ -4,20 +4,20 @@ metadata:
   name: frontend
   namespace: expense
   labels:
-    app: backend
+    app: frontend
     tier: web
     project: expense
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: backend
+      app: frontend
       tier: web
       project: expense
   template:
     metadata:
       labels:
-        app: backend
+        app: frontend
         tier: web
         project: expense
     spec:
